@@ -97,6 +97,21 @@ export default function Browse(){
 
         </div>
         {/*furniro section do with css-grid and the grid template areas */}
+        <div>
+            <h1>#Furniture</h1>
+            <div className="collage">
+                <div className="a"></div>
+                <div className="b"></div>
+                <div className="c"></div>
+                <div className="d"></div>
+                <div className="e"></div>
+                <div className="f"></div>
+                <div className="g"></div>
+                <div className="h"></div>
+                <div className="I"></div>
+        </div>
+        </div>
+        
         </div>
        </div>
     )
