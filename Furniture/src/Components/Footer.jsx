@@ -6,10 +6,9 @@ export default function Footer(){
                <h1>Funiro</h1> 
                <div className='link-container'>
                     <ul className='links store'>
-                        <Link>Home</Link>
-                        <Link>Shop</Link>
-                        <Link>About</Link>
-                        <Link>Contact</Link>
+                        <Link to='/'>Home</Link>
+                        <Link to='/shop'>Shop</Link>
+                        <Link to='/contact'>Contact</Link>
                     </ul>
                </div>
                <div className='link-container'>
@@ -17,6 +16,7 @@ export default function Footer(){
                         <Link>Payment Options</Link>
                         <Link>Returns</Link>
                         <Link>Privacy Policies</Link>
+                        <Link>Terms of Use</Link>
                     </ul>
                </div>
                <div className='link-container'>

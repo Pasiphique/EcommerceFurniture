@@ -7,17 +7,12 @@ export default function NavBar(){
                 <ul>
                     <Link to='/'>Home</Link>
                     <Link to='/shop'>Shop</Link>
-                    <Link to='/about'>About</Link>
-                    <Link to='/Contact'>Contact</Link>
-                    
                 </ul>
             </div>
             <div>
                 <ul>
-                    <Link>Settings</Link>
-                    <button>Search</button>
-                    <Link>Favorites</Link>
-                    <Link>Cart</Link>
+                    <input type="text" placeholder="sofa" />
+                    <Link to='/cart'>Cart</Link>
                 </ul>
             </div>
             
