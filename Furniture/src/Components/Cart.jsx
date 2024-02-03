@@ -12,6 +12,7 @@ export default function Cart(){
             <button>wowzers</button>
             <button>wowzers3</button>
             <button>oiehfg</button>
+            <button>goifd</button>
         </div>
         
     )
