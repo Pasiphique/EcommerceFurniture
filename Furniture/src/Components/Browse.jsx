@@ -1,7 +1,15 @@
  
+import ProductItems from './Product/productItems.json'
+import {Link} from 'react-router-dom'
 export default function Browse(){
+
+    const listitems = ProductItems.map(product =>{
+        return (<div key={product.id} className='product'>
+            <img src={product.src} alt="" />
+            <span>$ {product.price}</span>
+        </div>)
+    })
     return(
-        
        <div>
          <div>
             <h1>Browse The Range</h1>
@@ -24,64 +32,9 @@ export default function Browse(){
         <div>
             <h1>Our Products</h1>
             <div className="our-products">
-                <div className="product">
-                    <img src="/img/products/img3.png" alt="" />
-                    <span>Title</span>
-                    <p>Lorem, ipsum.</p>
-                    <span>Price</span>
-                    <span>discount</span>
-                </div>
-                <div className="product">
-                    <img src="/img/products/img1.png" alt="" />
-                    <span>Title</span>
-                    <p>Lorem, ipsum.</p>
-                    <span>Price</span>
-                    <span>discount</span>
-                </div>
-                <div className="product">
-                    <img src="/img/products/img2.png" alt="" />
-                    <span>Title</span>
-                    <p>Lorem, ipsum.</p>
-                    <span>Price</span>
-                    <span>discount</span>
-                </div>
-                <div className="product">
-                    <img src="/img/products/img3.1.png" alt="" />
-                    <span>Title</span>
-                    <p>Lorem, ipsum.</p>
-                    <span>Price</span>
-                    <span>discount</span>
-                </div>
-                <div className="product">
-                    <img src="/img/products/img4.png" alt="" />
-                    <span>Title</span>
-                    <p>Lorem, ipsum.</p>
-                    <span>Price</span>
-                    <span>discount</span>
-                </div>
-                <div className="product">
-                    <img src="/img/products/img5.png" alt="" />
-                    <span>Title</span>
-                    <p>Lorem, ipsum.</p>
-                    <span>Price</span>
-                    <span>discount</span>
-                </div>
-                <div className="product">
-                    <img src="/img/products/img6.png" alt="" />
-                    <span>Title</span>
-                    <p>Lorem, ipsum.</p>
-                    <span>Price</span>
-                    <span>discount</span>
-                </div>
-                <div className="product">
-                    <img src="/img/products/img7.png" alt="" />
-                    <span>Title</span>
-                    <p>Lorem, ipsum.</p>
-                    <span>Price</span>
-                    <span>discount</span>
-                </div>
+               {listitems.slice(0,8)}
             <div>
-                <button>Show More</button>
+                <button><Link to='/shop'>Show More</Link></button>
             </div>
         </div>
         <div>

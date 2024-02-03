@@ -9,11 +9,8 @@ export default function NavBar(){
                     <Link to='/shop'>Shop</Link>
                 </ul>
             </div>
-            <div>
-                <ul>
-                    <input type="text" placeholder="sofa" />
+            <div>  
                     <Link to='/cart'>Cart</Link>
-                </ul>
             </div>
             
         </nav>
