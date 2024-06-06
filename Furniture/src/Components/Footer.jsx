@@ -13,10 +13,10 @@ export default function Footer(){
                </div>
                <div className='link-container'>
                     <ul className='links help'>
-                        <Link>Payment Options</Link>
-                        <Link>Returns</Link>
-                        <Link>Privacy Policies</Link>
-                        <Link>Terms of Use</Link>
+                        <Link to='#'>Payment Options</Link>
+                        <Link to='#'>Returns</Link>
+                        <Link to='#'>Privacy Policies</Link>
+                        <Link to='#'>Terms of Use</Link>
                     </ul>
                </div>
                <div className='link-container'>

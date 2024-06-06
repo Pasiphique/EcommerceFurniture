@@ -142,7 +142,8 @@
 }
 footer{
     width: 100%;
-    display: flex;
+    position: relative;
+    bottom: 0;
     border-top: 1px solid black;
     padding-top:2rem;
 }
@@ -150,7 +151,7 @@ footer{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    height: 50vh;
+   
 }
 .link-container{
     display: flex;

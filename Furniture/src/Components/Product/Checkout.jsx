@@ -1,4 +1,4 @@
-
+import CartItems from '../CartItems'
 export default function Checkout(){
     return(
         <div>
@@ -98,6 +98,8 @@ export default function Checkout(){
                 <span>By placing the order, i agree to the <a href="">Terms of Use</a> and <a href="">Privacy Policy</a></span>
                 <span>Order # 339449</span>
             </div>
+            <CartItems />
         </div>
+        
     )
 }
