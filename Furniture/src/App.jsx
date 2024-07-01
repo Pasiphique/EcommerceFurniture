@@ -1,36 +1,36 @@
-import NavBar from './Components/NavBar'
-import Home from './Components/Home'
-import Contact from './Components/Contact'
-import Shop from './Components/Shop'
-import Footer from './Components/Footer'
-import Cart from './Components/Cart'
-import Checkout from './Components/Product/Checkout'
-import Options from './Context/Option'
+import NavBar from './NavBar'
+import Home from './Home/Home'
+import Contact from './Contact'
+import Shop from './Shop/Shop'
+import Footer from './Footer'
+import Cart from './Cart/Cart'
 import './App.css'
-
+import ShoppingCartProvider from './Context/CartContext'
 import React from 'react';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import ProductDisplay from './Shop/ProductDisplay'
 function App() {
   return (
-    <Router>
-    <div className='container'>
-    <NavBar/>
+    <ShoppingCartProvider>
+      <Router>
+      <div className='container'>
+      <NavBar/>
       <div className='content'>
-        <Routes>
-          <Route exact path='/' element= {<Home />} />
-          <Route path='/shop' element={<Shop />} /> 
-          <Route path='/product' element ={<Options />} >
-            <Route path=':productId' element={<Options />} />
-          </Route>
+          <Routes>
+            <Route exact path='/' element= {<Home />} />
+            <Route path='/shop' element={<Shop />} /> 
+            <Route path='/shop/product/:productId' element ={<ProductDisplay/>} >
+            </Route>
+            <Route path="/contact" element = {<Contact />} />
+            <Route path='/cart' element={<Cart />} /> 
+
+          </Routes>
+         </div> 
         
-          <Route path="/contact" element = {<Contact />} />
-          <Route path='/cart' element={<Cart />} />
-          <Route path='/checkout' element={<Checkout />} />
-        </Routes>
+      <Footer/>
       </div>
-    <Footer/>
-    </div>
-  </Router>
+    </Router>
+  </ShoppingCartProvider>
   )
 }
 

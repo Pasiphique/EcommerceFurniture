@@ -1,5 +1,5 @@
  
-import ProductItems from './Product/productItems.json'
+import ProductItems from '../Products/productItems.json'
 import {Link} from 'react-router-dom'
 export default function Browse(){
 
