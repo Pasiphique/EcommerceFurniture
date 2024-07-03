@@ -13,9 +13,9 @@ function App() {
   return (
     <ShoppingCartProvider>
       <Router>
-      <div className='container'>
+      <div >
       <NavBar/>
-      <div className='content'>
+      <div >
           <Routes>
             <Route exact path='/' element= {<Home />} />
             <Route path='/shop' element={<Shop />} /> 

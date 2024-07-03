@@ -7,8 +7,7 @@
     },
     {
         "id":2,
-        "src": "/img/products/img2.png",
-         
+        "src": "/img/products/img2.png",     
          "price": 999.99,
          "description": "description"
     },
@@ -45,12 +44,6 @@
         "src": "/img/products/img7.png",
          
          "price": 980.87,
-         "description": "description"
-    },
-    {
-        "id":8,
-        "src": "/img/products/img8.jpg",
-         "price": 87.99,
          "description": "description"
     },
     {
