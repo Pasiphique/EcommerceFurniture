@@ -1,18 +1,29 @@
 import { Link } from "react-router-dom"
+import { useEffect, useRef, useState } from "react"
 export default function NavBar(){
+    const [isOpen, setIsOpen] = useState(false)
+    const ref = useRef()
+    const toggleMenu = ()=>{
+        setIsOpen((open) => !open)
+    }
+    
     return(
-        <nav>
-            <div><Link  to='/'>Logo</Link></div>
-            <div>
-                <ul>
-                    <Link to='/'>Home</Link>
+        <nav className="navbar">
+            <div className={`k ${isOpen ? "is-open": ""}`}>
+                <Link  to='/'>Funiro.</Link>
+                <ul className={`links ${isOpen ? "is-open": ""}`}>
                     <Link to='/shop'>Shop</Link>
+                    <Link to='/cart'>Cart</Link>      
                 </ul>
             </div>
-            <div>  
-                    <Link to='/cart'>Cart</Link>
+            
+            <div className={`hamburger ${isOpen ? "is-open": ""}`} onClick={toggleMenu} ref={ref}>
+                <span className="bar"></span>
+                <span className="bar"></span>
+                <span className="bar"></span>
             </div>
             
         </nav>
+        
     )
 }
