@@ -23,7 +23,7 @@ export default function Footer(){
                                      
                </div>
                <p>	&copy; 2024 Pasiphique Osward</p>
-        </div>
+            </div>
         
         </footer>
         

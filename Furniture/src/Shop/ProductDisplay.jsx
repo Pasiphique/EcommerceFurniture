@@ -7,13 +7,15 @@ export default function ProductDisplay(){
     const quantity = getItemQuantity(productId)
     const product = AllProducts.find((product => product.id == productId))
     return(
-        <div key={product.id}>
+        <div key={product.id} className="ind-product">
             <div className='product'>
-                <img  src={product.src} alt="" />
-                <span>$ {product.price}</span>
-                <span>{product.description}</span>
-            </div>
-            {quantity == 0 ? 
+                <div className='product-image-container'>
+                    <img src={product.src} alt="" />
+                </div>
+                <div className="product-info">
+                    <span>$ {product.price}</span>
+                    <span>{product.description}</span>
+                    {quantity == 0 ? 
                 <button onClick={()=>increaseCartQuantity(productId)}>Add to Cart</button>:
                 (
                     <>
@@ -25,7 +27,11 @@ export default function ProductDisplay(){
                         <button onClick={()=> removeFromCart(id)}>remove </button>
                     </>
                 )
-        }        
+        } 
+                </div>
+                
+            </div>
+                   
         </div>      
     )
 }

@@ -18,27 +18,33 @@ export default function Cart(){
     },[cartItems])
    
     return(
-        <>
+        <div className='cart-container'>
             <CartItems cartItems={cartItems} AllProducts={AllProducts}/>
-            <div>
-                <h2>Cart Totals</h2>
-                <p>
-                    <span>SubTotal</span>
-                    <span>${total}</span>
-                </p>
-                <p>
-                    <span>Shipping Fee</span>
-                    <span>Free</span>
-                </p>
-                <p>
-                    <span>Total</span>
-                    <span>${total}</span>
-                </p>
-              
-            </div>
-            <button>Checkout</button>           
+            {cartItems.length == 0? 
+            (<p>Your Funiro Shopping Cart is empty</p>)
+                : (
+                <div className='cart-totals'>
+                    <h2>Cart Totals</h2>
+
+                    <div>
+                        <p>
+                            <span>SubTotal: ${total} </span>
+                        </p>
+                        <p>
+                            <span>Shipping Fee: Free</span>
+                        </p>
+                        <p>
+                            <span>Total:${total} </span>
+                        </p>
+                    </div>
+                
+                    <button>Checkout</button>
+                </div>
+            ) }
             
-        </>
+                       
+            
+        </div>
         
     )
 }

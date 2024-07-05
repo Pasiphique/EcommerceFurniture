@@ -9,7 +9,7 @@ export default function NavBar(){
     
     return(
         <nav className="navbar">
-            <div className={`k ${isOpen ? "is-open": ""}`}>
+            <div className={`links-container ${isOpen ? "is-open": ""}`}>
                 <Link  to='/'>Funiro.</Link>
                 <ul className={`links ${isOpen ? "is-open": ""}`}>
                     <Link to='/shop'>Shop</Link>
