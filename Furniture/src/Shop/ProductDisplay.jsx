@@ -9,12 +9,17 @@ export default function ProductDisplay(){
     return(
         <div key={product.id} className="ind-product">
             <div className='product'>
-                <div className='product-image-container'>
-                    <img src={product.src} alt="" />
+                <div>
+                    <h2>Product</h2>
+                    <div className='product-image-container'>
+                        <img src={product.src} alt="" />
+                    </div>
                 </div>
+                
                 <div className="product-info">
+                   
                     <span>$ {product.price}</span>
-                    <span>{product.description}</span>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos quam in dolore esse nulla iusto beatae blanditiis quas sapiente eaque.</span>
                     {quantity == 0 ? 
                 <button onClick={()=>increaseCartQuantity(productId)}>Add to Cart</button>:
                 (
