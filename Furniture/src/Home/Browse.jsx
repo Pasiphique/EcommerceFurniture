@@ -17,73 +17,74 @@ export default function Browse(){
         </div>
         <div className="range-container">
             <div className="range">
-                <img src="img\dining.png" alt="" />
+                
+                <Link to='/shop'>
+                    <img src="img\dining.png" alt="" />
+                </Link>
                 <span>Dining</span>
             </div>
             <div className="range">
-                <img src="img\living-room.png" alt="" />
+                <Link to='/shop'>
+                    <img src="img\living-room.png" alt="" />
+                </Link>
+                
                 <span>Living</span>
             </div>
             <div className="range">
-                <img src="img\bedroom.png" alt="" />
+                <Link to='/shop'>
+                    <img src="img\bedroom.png" alt="" />
+                </Link>
+                
                 <span>Bedroom</span>
             </div>
         </div>
-        <div>
-            <h1>Our Products</h1>
-            <div className="our-products">
-               {listitems.slice(0,8)}
-            <div>
-                <button><Link to='/shop'>Show More</Link></button>
-            </div>
-        </div>
-        <div>
-            <div>
+        <div className='inspirations'>
+            <div className='insp-text'>
                 <p>50+ Beautiful rooms inspiration</p>
                 <p>Our designer already made a lot of beautiful prototype of rooms that inspire you</p>
                 <button>Explore More</button>
             </div>
-            <div>
-                <img src="/img/inspiration/inspir1.png" alt="" className="inspiration"/>
-                <img src="/img/inspiration/inspir2.png" alt="" className="inspiration" />
+            <div className='inspiration-images'>
+               
+                <div><img src="/img/inspiration/inspir1.png" alt="" /></div>
+                <div><img src="/img/inspiration/inspir2.png" alt=""  /></div>
             </div>
 
         </div>
-        {/*furniro section do with css-grid and the grid template areas */}
-        <div>
+        {/* furniro section do with css-grid and the grid template areas */}
+         <div className='collage-container'>
             <h1>#Furniture</h1>
             <div className="collage">
-                <div className="a">
+                <div className=" lk">
                     <img src="/img/a.png" alt="" />
                 </div>
-                <div className="b" >
+                <div className="lk " >
                     <img src="/img/b.png" alt="" />
                 </div>
-                <div className="c">
+                <div className="lk ">
                     <img src="/img/c.png" alt="" />
                 </div>
-                <div className="d">
+                <div className="lk">
                     <img src="/img/d.png" alt="" />
                 </div>
-                <div className="e">
-                <img src="/img/e.png" alt="" />
+                <div className=" lk">
+                    <img src="/img/e.png" alt="" />
                 </div>
-                <div className="f">
+                <div className="lk">
                     <img src="/img/f.png" alt="" />
                 </div>
-                <div className="g">
+                <div className="lk">
                     <img src="/img/g.png" alt="" />
                 </div>
-                <div className="h">
-                <img src="/img/h.png" alt="" />
+                <div className="lk">
+                    <img src="/img/h.png" alt="" />
                 </div>
-                <div className="I">
+                <div className="lk">
                     <img src="/img/i.png" alt="" />
                 </div>
-        </div>
-        </div>
+            </div> 
+        </div> 
         
-        </div>
        </div>
     )
 }

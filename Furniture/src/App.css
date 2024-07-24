@@ -17,7 +17,6 @@
     align-items: center;
     min-height: 15vh;
     background-color: rgba(253, 230, 187, 0.466);
-    margin-bottom: 5%;
 }
 .links-container {
     display: flex;
@@ -73,6 +72,146 @@
         margin-top: .5rem;
     }
 }
+/* Home page */
+
+.hero-container{
+    width: 100%;
+}
+.hero-text{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.hero-image{
+    width: 100%;
+    height: 25vh;
+}
+.hero-image img {
+    width: 100%;
+    height: 100%;
+}
+@media (width > 426px) {
+    .hero-image{
+        width: 100%;
+        height: 35vh;
+    }
+}
+@media (width > 768px) {
+    .hero-image{
+        width: 100%;
+        height: 50vh;
+    }
+}
+@media (width > 1024px) {
+    .hero-image{
+        width: 100%;
+        height: 80vh;
+    }
+}
+/* browse the range section */
+.range-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.range{
+    width: 30%;
+    height:80%;
+}
+.range img {
+    width: 100%;
+    height: 100%;
+}
+@media (width > 1024px ){
+    .range {
+        width: 18%;
+    }
+}
+
+/* Inspiration section */
+.inspirations {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top:2rem;
+    max-height: 40vh; 
+    margin-bottom: 4rem;
+    margin-top:4rem;
+}
+
+.inspiration-images{
+    margin-top: .5rem;
+    display: flex;
+    width: 100%;
+    max-height: 50%;
+    justify-content: space-around;
+   
+}
+.inspiration-images div {
+    width: 45%;
+    height: 15vh;
+    
+    
+}
+.inspiration-images img {
+    width: 100%;
+    height: 100%;
+}
+@media (width > 425px){
+    .inspiration-images div {
+        width: 30%;
+        height: 25vh;
+        
+    }
+}
+@media (width > 830px){
+    .inspiration-images div {
+        width: 45%;
+        height: 30vh;
+        
+        
+    }
+    .inspiration-images{       
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        
+    }
+    .inspirations > div {
+        width: 50%;
+    }
+    .insp-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+/* furniture collage */
+
+.collage-container{
+    width: 100%;
+    height: 90vh;
+    background-color: antiquewhite;
+}
+.collage{
+    width: 100%;
+   height: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: scroll;
+    overflow-x: hidden;
+    
+}
+.lk {
+    width: 50%;
+    height: 60%;
+}
+.lk img{
+    max-width: 100%;
+    max-height: 100%;
+}
 
 
 /*Shop Page */
@@ -99,45 +238,82 @@
     justify-content: center;
     align-items: center;
 }
+.product-tag{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
 
-@media (width > 438px) {
+}
+.product-info {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+
+}
+
+@media (width > 500px) {
     .product{
-       max-width: 80%;
+       flex-direction: row;
+    }
+    .product-tag{
+        width: 50%;
+    }
+    .product-info{
+        width: 30%;
+        height: 60vh;
+        
+    }
+    .product-image-container {
+        width: 60%;
+        height: 50%;
     }
 }
-@media (width > 492px) {
-    .product{
-       max-width: 70%;
-    }
-}
 
-.product > h2 {
-    padding:1rem;
-}
 .product-image-container {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.product-info {
-    min-height: 30vh;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 2rem;
-    justify-content: space-around;
-    text-align: center;
-    align-items: center;
+    height: 50%;
 }
-.product-info button {
-    width: 60%;
-    border-radius: 1rem;
-    height: 2rem;
+@media (width > 765px){
+    .product-info{
+        width: 40%;
+        border:1px solid black;
+    }
+     .product-tag{
+        width: 60%;
+        height: 70%;
+    }
+    .product-image-container {
+        width: 80%;
+        height: 100%;
+       
+    }
+    .product{
+        max-width: 70%;
+    }
+    .ind-product{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .product-image-container img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
 }
 .shop-product{
     width: 70%;
@@ -174,9 +350,87 @@
         border:1px solid black;
     }
 } 
-
-
-
+.cart-buttons{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.cart-buttons button{
+    width: 3rem;
+    height: 2rem;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    margin:.05rem;
+}
+.cart-buttons button:hover{
+    background-color: #f6dda3;
+}
+.cart-buttons > div{
+    border:1px solid black;
+    padding:.5rem;
+    border-radius: .5rem;
+   
+}
+.cart-buttons > button{
+    width: 50%;
+    height: 3.5rem;
+    border:1px solid black;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+.cart-buttons > button:hover{
+    background-color: #f6dda3;
+}
+.product-pick{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+.product-pick > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product-pick > div button {
+    width: 2rem;
+    height: 2rem;
+    margin:.05rem;
+    cursor:pointer;
+    border:none;
+}
+.circles{
+    width: 40%;
+    display: flex;
+    justify-content:left;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.circles button{
+    border-radius: 50%;
+    
+}
+.circles button:nth-child(2){
+    border:1px solid black;
+}
+.circles button:focus{
+    border:3px solid #d6a73a;
+}
+.circles button:hover{
+    border:3px solid #d6a73a;
+}
+.boxes button{
+    background-color:#f4dba0;
+}
+.boxes button:hover, .boxes button:focus{
+    background-color: #d6a73a;
+}
 /* ///////////////////////////////////////////////////////*/
 
 /* Footer Component */
@@ -236,6 +490,7 @@ a{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top:2rem;
 }
 .cart-container > p {
     display: flex;
