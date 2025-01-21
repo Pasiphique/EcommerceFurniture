@@ -17,7 +17,7 @@ export default function Shop(){
                 {displayedItems.map(product =>{
                     return (
                         <div key={product.id} className='shop-product'>
-                            <Link to={`/shop/product/${product.id}`}>                             
+                            <Link to={`./shop/product/${product.id}`}>                             
                                 <div className='image-container'>
                                     <img src={product.src} alt="" />
                                 </div>
