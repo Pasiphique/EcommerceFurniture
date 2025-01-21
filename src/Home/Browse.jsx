@@ -18,21 +18,21 @@ export default function Browse(){
         <div className="range-container">
             <div className="range">
                 
-                <Link to='/shop'>
-                    <img src="img\dining.png" alt="" />
+                <Link to='./shop'>
+                    <img src="./public/img/dining.png" alt="" />
                 </Link>
                 <span>Dining</span>
             </div>
             <div className="range">
-                <Link to='/shop'>
-                    <img src="img\living-room.png" alt="" />
+                <Link to='./shop'>
+                    <img src="./public/img/living-room.png" alt="" />
                 </Link>
                 
                 <span>Living</span>
             </div>
             <div className="range">
-                <Link to='/shop'>
-                    <img src="img\bedroom.png" alt="" />
+                <Link to='./shop'>
+                    <img src="./img/bedroom.png" alt="" />
                 </Link>
                 
                 <span>Bedroom</span>
@@ -46,8 +46,8 @@ export default function Browse(){
             </div>
             <div className='inspiration-images'>
                
-                <div><img src="/img/inspiration/inspir1.png" alt="" /></div>
-                <div><img src="/img/inspiration/inspir2.png" alt=""  /></div>
+                <div><img src="./img/inspiration/inspir1.png" alt="" /></div>
+                <div><img src="./img/inspiration/inspir2.png" alt=""  /></div>
             </div>
 
         </div>
@@ -56,31 +56,31 @@ export default function Browse(){
             <h1>#Furniture</h1>
             <div className="collage">
                 <div className=" lk">
-                    <img src="/img/a.png" alt="" />
+                    <img src="./img/a.png" alt="" />
                 </div>
                 <div className="lk " >
-                    <img src="/img/b.png" alt="" />
+                    <img src="./img/b.png" alt="" />
                 </div>
                 <div className="lk ">
-                    <img src="/img/c.png" alt="" />
+                    <img src="./img/c.png" alt="" />
                 </div>
                 <div className="lk">
-                    <img src="/img/d.png" alt="" />
+                    <img src="./img/d.png" alt="" />
                 </div>
                 <div className=" lk">
-                    <img src="/img/e.png" alt="" />
+                    <img src="./img/e.png" alt="" />
                 </div>
                 <div className="lk">
-                    <img src="/img/f.png" alt="" />
+                    <img src="./img/f.png" alt="" />
                 </div>
                 <div className="lk">
-                    <img src="/img/g.png" alt="" />
+                    <img src="./img/g.png" alt="" />
                 </div>
                 <div className="lk">
-                    <img src="/img/h.png" alt="" />
+                    <img src="./img/h.png" alt="" />
                 </div>
                 <div className="lk">
-                    <img src="/img/i.png" alt="" />
+                    <img src="./img/i.png" alt="" />
                 </div>
             </div> 
         </div> 

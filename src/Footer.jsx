@@ -7,19 +7,19 @@ export default function Footer(){
                
                <div className='link-container'> 
                     <span>
-                        <Link to='/'>Home</Link>
-                        <Link to='/shop'>Shop</Link>
+                        <Link to='./'>Home</Link>
+                        <Link to='./shop'>Shop</Link>
                     </span>               
                     <span>
-                        <Link to='/contact'>Contact</Link>
-                        <Link to='/contact'>Payment Options</Link>
+                        <Link to='./contact'>Contact</Link>
+                        <Link to='./contact'>Payment Options</Link>
                     </span>
                     
                     <span>
-                        <Link to='/contact'>Returns</Link>
-                        <Link to='/contact'>Privacy Policies</Link>  
+                        <Link to='./contact'>Returns</Link>
+                        <Link to='./contact'>Privacy Policies</Link>  
                     </span>
-                    <Link to='/contact'>Terms of Use</Link>  
+                    <Link to='./contact'>Terms of Use</Link>  
                                      
                </div>
                <p>	&copy; 2024 Pasiphique Osward</p>
