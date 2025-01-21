@@ -10,10 +10,10 @@ export default function NavBar(){
     return(
         <nav className="navbar">
             <div className={`links-container ${isOpen ? "is-open": ""}`}>
-                <Link  to='/'>Funiro.</Link>
+                <Link  to='./'>Funiro.</Link>
                 <ul className={`links ${isOpen ? "is-open": ""}`}>
-                    <Link to='/shop'>Shop</Link>
-                    <Link to='/cart'>Cart</Link>      
+                    <Link to='./shop'>Shop</Link>
+                    <Link to='./cart'>Cart</Link>      
                 </ul>
             </div>
             
